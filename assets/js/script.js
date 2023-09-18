@@ -152,6 +152,10 @@ function showScore(){
 
 submitBtn.addEventListener("click", function(event) {
   event.preventDefault();
+
+  while(initialsIn.value.length > 2 || initialsIn.value.length < 2 || initialsIn.value == null || initialsIn.value == "") {
+    initialsIn.value = prompt("Write your initials here (2 letters): ");
+  }
   
   let userInfo = {
     score: score,
