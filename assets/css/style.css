@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  background-color: #eff5f8;
+  color: #e98e06;
+}
+
+h2,
+h3, h1 {
+  text-align: center;
+}
+
+#start{
+  background-color:	#373738;
+  border: 1px solid #eceff1;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+  margin: 60px auto;
+  padding: 20px;
+  width: 60vw;
+}
+#start-button:hover, #submit-btn:hover, #again-btn:hover, #delete-btn:hover{
+  background-color: #fe2f00;
+  font-size: 1.25em;
+}
+
+.btn, #start-button, #submit-btn, #again-btn{
+  background-color: #e98e06;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
+  letter-spacing: 0.21px;
+  line-height: 16px;
+  padding: 20px 52px;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  margin: 0.6em auto;
+  display: flex;
+}
+
+.btn:hover{
+  background-color: white;
+  color: black;
+}
+
+#next-btn{
+  background-color: #fe2f00;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
+  letter-spacing: 0.21px;
+  line-height: 16px;
+  max-width: 300px;
+  padding: 20px 52px;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  margin: 0.6em auto;
+  display: none;
+}
+#delete-btn{
+  background-color: #e98e06;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
+  letter-spacing: 0.21px;
+  line-height: 16px;
+  max-width: 300px;
+  padding: 20px 35px;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  margin: 0.6em auto;
+  display: none;
+}
+
+.app {
+  background-color:	#373738;
+  border: 1px solid #eceff1;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+  margin: 60px auto;
+  padding: 20px;
+  width: 60vw;
+  display: none;
+}
+
+.correct{
+  background-color: green;
+}
+
+.incorrect{
+  background-color: red;
+}
+
+#input-container, #button-container{
+  display: none;
+}
+
+#table{
+  display: none;
+  margin: 20px;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  color: #eceff1;
+}
+
+td{
+  padding: 20px;
+  border: 3px solid #e98e06;
+}
