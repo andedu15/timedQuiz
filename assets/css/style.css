@@ -131,20 +131,41 @@ td{
 }
 @media screen and (max-width: 414px) {
   #delete-btn, #again-btn {
-    font-size: 0.5em;
+    font-size: 0.3em;
     padding: 5px;
   }
   td{
     padding: 4px;
   }
   table{
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
-  .btn, #start-button, #submit-btn, #next-button{
+  #table{
+    margin: 0;
+  }
+  .btn, #start-button, #submit-btn{
     font-size: 0.8em;
     padding: 25px;
   }
+  #next-btn{
+    font-size: 0.6em;
+    padding: 10px;
+  }
   h1{
-    font-size: 1.5em;
+    font-size: 1.3em;
+  }
+  h2{
+    font-size: 0.5em;
+  }
+  #timer{
+    font-size: 0.4em;
+  }
+  .btn{
+    font-size: 0.5em;
+    padding: 5px;
+  }
+  #start-button:hover, #submit-btn:hover, #again-btn:hover, #delete-btn:hover{
+    background-color: #fe2f00;
+    font-size: 0.3em;
   }
 }
