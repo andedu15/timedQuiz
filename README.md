@@ -38,7 +38,7 @@ Open deployed app at https://andedu15.github.io/timedQuiz/
 
  - You will see the high score table, and you can play again to get a new score or delete the score saved.
 
- ![Alt text](iassets/img/image-4.png)
+ ![Alt text](assets/img/image-4.png)
 
 ## Screenshot
 
