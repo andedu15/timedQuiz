@@ -64,7 +64,7 @@ const table = document.getElementById("table");
 
 let currentQuestionIndex = 0; // question index
 let score = 0; //user score
-let timeLeft = 20; // timer
+let timeLeft = 60; // timer start 60 seconds
 let timerInterval;
 
 /* WELCOME TO THE QUIZ WINDOWS */
@@ -90,6 +90,7 @@ function showQuestion(){
   let questionNo = currentQuestionIndex + 1;
   questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
+   /* CREATE ANSWERS BUTTONS */
   currentQuestion.answers.forEach(answer => {
     const button = document.createElement("button");
     button.innerHTML = answer.text;
@@ -118,7 +119,7 @@ function selectAnswer(e){
     score++;
   }else{
     selectedBtn.classList.add("incorrect");
-    timeLeft = timeLeft - 10;
+    timeLeft = timeLeft - 10;  // Wrong answer subtract 10 seconds
   }
 
   Array.from(answerButtons.children).forEach(button => {
@@ -152,8 +153,9 @@ function showScore(){
 submitBtn.addEventListener("click", function(event) {
   event.preventDefault();
 
+  /* INPUT VALIDATION */
   while(initialsIn.value.length > 2 || initialsIn.value.length < 2 || initialsIn.value == null || initialsIn.value == "") {
-    initialsIn.value = prompt("Write your initials here (2 letters): ");
+    initialsIn.value = prompt("Write your initials here (2 letters): "); 
   }
   
   let userInfo = {
@@ -161,9 +163,9 @@ submitBtn.addEventListener("click", function(event) {
     initials: initialsIn.value,
   };
 
-  results.push(userInfo);
+  results.push(userInfo); // Score and initials are added to an array
   
-  localStorage.setItem("userInfo", JSON.stringify(userInfo));
+  localStorage.setItem("userInfo", JSON.stringify(userInfo)); //Save in local storage
   showList();
   
   });
@@ -240,5 +242,5 @@ function updateTimer() {
   }
 }
 
-
+ /* START QUIZ */
 startButton.addEventListener("click", startQuiz);
