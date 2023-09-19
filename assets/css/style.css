@@ -122,3 +122,29 @@ td{
   padding: 20px;
   border: 3px solid #e98e06;
 }
+
+@media screen and (max-width: 1012px) {
+  #delete-btn, #again-btn {
+    font-size: 0.8em;
+    padding: 25px;
+  }
+}
+@media screen and (max-width: 414px) {
+  #delete-btn, #again-btn {
+    font-size: 0.5em;
+    padding: 5px;
+  }
+  td{
+    padding: 4px;
+  }
+  table{
+    font-size: 0.8em;
+  }
+  .btn, #start-button, #submit-btn, #next-button{
+    font-size: 0.8em;
+    padding: 25px;
+  }
+  h1{
+    font-size: 1.5em;
+  }
+}
