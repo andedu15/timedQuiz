@@ -1,50 +1,49 @@
+
+// QUESTIONS
 const questions = [
   {
-    question: "What is your name?",
+    question: "How can you add a comment in a JavaScript?",
     answers:[
-      {text: "Andres", correct: true},
-      {text: "Eduardo", correct: false},
-      {text: "Mejia", correct: false},
-      {text: "Julio", correct: false},
+      {text: "!--This is a comment--", correct: false},
+      {text: "'This is a comment", correct: false},
+      {text: "//This is a comment", correct: true},
     ]
   },
   {
-    question: "What is your name?asdasd",
+    question: "The external JavaScript file must contain the 'script' tag.",
     answers:[
-      {text: "Andres", correct: true},
-      {text: "Eduardo", correct: false},
-      {text: "Mejia", correct: false},
-      {text: "Fereira", correct: false},
+      {text: "True", correct: true},
+      {text: "False", correct: false},
     ]
   },
   {
-    question: "What is your name?",
+    question: "How do you write 'Hello World' in an alert box?",
     answers:[
-      {text: "Andres", correct: true},
-      {text: "Eduardo", correct: false},
-      {text: "Mejia", correct: false},
-      {text: "Fereira", correct: false},
+      {text: "msgBox('Hello World');  ", correct: false},
+      {text: "alert('Hello World');  ", correct: true},
+      {text: "alertBox('Hello World');", correct: false},
+      {text: "msg('Hello World');", correct: false},
     ]
   },
   {
-    question: "What is your name?",
+    question: "How do you call a function named 'myFunction'?",
     answers:[
-      {text: "Andres", correct: true},
-      {text: "Eduardo", correct: false},
-      {text: "Mejia", correct: false},
-      {text: "Fereira", correct: false},
+      {text: "myFunction()", correct: true},
+      {text: "call myFunction()", correct: false},
+      {text: "call function myFunction()", correct: false},
+      {text: "myFunction() called", correct: false},
     ]
   },
   {
-    question: "What is your name?",
+    question: "How does a WHILE loop start?",
     answers:[
-      {text: "Andres", correct: true},
-      {text: "Eduardo", correct: false},
-      {text: "Mejia", correct: false},
-      {text: "Fereira", correct: false},
+      {text: "while (i <= 10; i++)", correct: false},
+      {text: "while (i <= 10)  ", correct: true},
+      {text: "while i = 1 to 10", correct: false},
     ]
   }
 ];
+
 
 const start = document.getElementById("start");
 const startButton = document.getElementById("start-button");
@@ -63,9 +62,9 @@ const results = [];
 const table = document.getElementById("table");
 
 
-let currentQuestionIndex = 0;
-let score = 0;
-let timeLeft = 5;
+let currentQuestionIndex = 0; // question index
+let score = 0; //user score
+let timeLeft = 20; // timer
 let timerInterval;
 
 /* WELCOME TO THE QUIZ WINDOWS */
@@ -240,12 +239,6 @@ function updateTimer() {
       
   }
 }
-
-/* function endQuiz() {
-  clearInterval(timerInterval); // Stop the timer
-  currentQuestionIndex = 0;
-  showScore();
-} */
 
 
 startButton.addEventListener("click", startQuiz);

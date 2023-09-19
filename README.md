@@ -12,17 +12,17 @@
 
 ## Usage
 
-Open deployed app at 
+Open deployed app at https://andedu15.github.io/timedQuiz/
 
- - Click on "Generate Password" button.
+ - Click on "Start Quiz" button.
 
 
 
- - Choose the LENGTH of your password.
+ - You will see a timer and the first question.
 
  
 
- - Choose if you want LOWERCASE.
+ - Choose your answer. After your selection, you will see the correct answer (green) and wrong answer (red).
 
  
 
