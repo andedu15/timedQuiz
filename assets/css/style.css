@@ -117,6 +117,10 @@ h3, h1 {
   border-collapse: collapse;
   color: #eceff1;
 }
+input{
+  width: 70px;
+  height: 40px;
+}
 
 td{
   padding: 20px;

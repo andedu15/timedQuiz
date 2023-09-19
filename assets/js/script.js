@@ -165,7 +165,7 @@ submitBtn.addEventListener("click", function(event) {
 
   results.push(userInfo); // Score and initials are added to an array
 
-  /* SORT ARRAY FROM HIGH SCORE TO LOW SCORE */
+  /* SORTS THE ARRAY FROM HIGH SCORE TO LOW SCORE */
   results.sort( (a, b) => {
     if(a.score < b.score) {
       return 1;
