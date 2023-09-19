@@ -129,8 +129,42 @@ td{
 
 @media screen and (max-width: 1012px) {
   #delete-btn, #again-btn {
-    font-size: 0.8em;
+    font-size: 1em;
+    padding: 10px;
+  }
+  td{
+    padding: 4px;
+  }
+  table{
+    font-size: 0.6em;
+  }
+  #table{
+    margin: 0;
+  }
+  .btn, #start-button, #submit-btn{
+    font-size: 1.5em;
     padding: 25px;
+  }
+  #next-btn{
+    font-size: 1em;
+    padding: 10px;
+  }
+  h1{
+    font-size: 1.5em;
+  }
+  h2{
+    font-size: 1em;
+  }
+  #timer{
+    font-size: 0.8em;
+  }
+  .btn{
+    font-size: 1em;
+    padding: 15px;
+  }
+  #start-button:hover, #submit-btn:hover, #again-btn:hover, #delete-btn:hover{
+    background-color: #fe2f00;
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 414px) {
@@ -167,6 +201,46 @@ td{
   .btn{
     font-size: 0.5em;
     padding: 5px;
+  }
+  #start-button:hover, #submit-btn:hover, #again-btn:hover, #delete-btn:hover{
+    background-color: #fe2f00;
+    font-size: 0.3em;
+  }
+}
+@media screen and (max-width: 300px) {
+  #delete-btn, #again-btn {
+    font-size: 0.25em;
+    padding: 3px;
+  }
+  td{
+    padding: 4px;
+  }
+  table{
+    font-size: 0.4em;
+  }
+  #table{
+    margin: 0;
+  }
+  .btn, #start-button, #submit-btn{
+    font-size: 0.5em;
+    padding: 10px;
+  }
+  #next-btn{
+    font-size: 0.4em;
+    padding: 8px;
+  }
+  h1{
+    font-size: 0.8em;
+  }
+  h2{
+    font-size: 0.5em;
+  }
+  #timer{
+    font-size: 0.4em;
+  }
+  .btn{
+    font-size: 0.35em;
+    padding: 2px;
   }
   #start-button:hover, #submit-btn:hover, #again-btn:hover, #delete-btn:hover{
     background-color: #fe2f00;
