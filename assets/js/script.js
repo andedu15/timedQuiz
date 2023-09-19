@@ -164,6 +164,17 @@ submitBtn.addEventListener("click", function(event) {
   };
 
   results.push(userInfo); // Score and initials are added to an array
+
+  /* SORT ARRAY FROM HIGH SCORE TO LOW SCORE */
+  results.sort( (a, b) => {
+    if(a.score < b.score) {
+      return 1;
+    }
+    if(a.score > b.score) {
+      return -1;
+    }
+  });
+  console.log(results);
   
   localStorage.setItem("userInfo", JSON.stringify(userInfo)); //Save in local storage
   showList();
@@ -194,7 +205,7 @@ function generateList(){
 function showList(){
   initialsIn.style.display = "none";
   console.log(results);
-  questionElement.innerHTML = "Score History"
+  questionElement.innerHTML = "High Score"
   generateList();
   submitBtn.style.display = "none";
   buttonContainer.style.display = "flex"
